@@ -20,9 +20,9 @@ I'm a final-year **Software Engineering undergraduate** with deep experience in 
 
 | 🧠 AI & Automation | ⚙️ Full Stack & Systems | 📱 Mobile & UI |
 |-------------------|------------------------|----------------|
-| [Agentic AI PDF Assistant](https://github.com/Dumidu1212/agentic_ai_pdf_assistant_agent) – LLM-powered PDF understanding using Groq, pgvector, and Agno. | [Code Analyzer](https://github.com/Dumidu1212/Code_Analyzer) – MERN stack app for multi-language code quality analysis. | [Vital Care App](https://github.com/Dumidu1212/vital-care-app) – Health & wellness Flutter app for mindfulness, journaling, and activity tracking. |
-| [Finance Agent](https://github.com/Dumidu1212/agentic_ai_financial_agent) – Market analysis assistant using live stock data + web search. | [Smart Waste Management System](https://github.com/Dumidu1212/Smart-Waste-Management-System) – User QR code, scheduling, analytics. | [Sarasavi Driving School App](https://github.com/Dumidu1212/Sarasavi-Driving-School) – Google Maps + payments + admin panel. |
-| [PDF Chatbot Agent (WIP)]() – Intelligent query interface for documents with long-term memory. | [OSGi Smart Office System](https://github.com/Dumidu1212/OSGI-Smart-Office-Environment-Monitoring-System) – Modular Java system simulating smart sensors. | [Countries Explorer](https://github.com/Dumidu1212/Countries-Explorer) – React app with filters, favorites, region sort, dark mode.|
+| [Agentic AI PDF Assistant](https://github.com/Dumidu1212/agentic_ai_pdf_assistant_agent) – LLM-powered PDF understanding using Groq, pgvector, and Agno. | [Code Analyzer](https://github.com/Dumidu1212/Code_Analyzer) – MERN stack app for multi-language code quality analysis. | [Sarasavi Driving School App](https://github.com/Dumidu1212/Sarasavi-Driving-School) – Google Maps + payments + admin panel. |
+| [Finance Agent](https://github.com/Dumidu1212/agentic_ai_financial_agent) – Market analysis assistant using live stock data + web search. | [OSGi Smart Office System](https://github.com/Dumidu1212/OSGI-Smart-Office-Environment-Monitoring-System) – Modular Java system simulating smart sensors. | [Countries Explorer](https://github.com/Dumidu1212/Countries-Explorer) – React app with filters, favorites, region sort, dark mode. |
+
 
 ---
 
