@@ -47,7 +47,7 @@ I'm a final-year **Software Engineering undergraduate** with deep experience in 
 ## 🤝 Let's Connect
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/dumidurajapaksha)
-- 🌐 [dumidu.dev](https://dumindu.dev) _(Coming soon!)_
+- 🌐 [dumidu.dev]_(Coming soon!)_
 - 📬 dumidu.rajapaksa@gmail.com
 
 > “I don't just build code — I build agents that understand, learn, and serve.” 🚀
