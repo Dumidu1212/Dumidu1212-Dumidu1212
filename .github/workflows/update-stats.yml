@@ -2,34 +2,65 @@ name: Update GitHub Stats Cards
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours
-  workflow_dispatch:         # manual trigger
+    - cron: "0 */1 * * *"
+  workflow_dispatch:
   push:
-    branches: [ main ]       # optional: also refresh on pushes
+    branches: [ main ]
+
+# allow committing back to the repo
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout main (not detached)
         uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
 
       - name: Prepare assets dir
         run: mkdir -p assets
 
-      - name: Fetch Stats card
+      - name: Fetch Stats card (with retries + debug headers)
+        env:
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
         run: |
-          curl -sSfL \
-            -H "User-Agent: gh-actions" \
-            "https://github-readme-stats.vercel.app/api?username=Dumidu1212&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&cache_seconds=86400&token=${{ secrets.GH_STATS_TOKEN }}" \
-            -o assets/gh-stats.svg
+          set -e
+          URL="https://github-readme-stats.vercel.app/api?username=Dumidu1212&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&cache_seconds=86400&token=${GH_STATS_TOKEN}"
+          for i in 1 2 3; do
+            echo "Attempt $i ..."
+            # Show status + rate limit headers for debugging
+            curl -I -sS "$URL" | sed -n '1p;/^x-ratelimit-/Ip'
+            # Download; don't -f so we can capture body on error and inspect
+            code=0
+            curl -sSL "$URL" -o assets/gh-stats.svg || code=$?
+            if [ $code -eq 0 ] && grep -q "<svg" assets/gh-stats.svg; then
+              break
+            fi
+            sleep $((i*3))
+          done
+          test -s assets/gh-stats.svg
 
-      - name: Fetch Top Languages card
+      - name: Fetch Top Languages card (with retries)
+        env:
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
         run: |
-          curl -sSfL \
-            -H "User-Agent: gh-actions" \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=Dumidu1212&layout=compact&theme=radical&hide_border=true&langs_count=10&cache_seconds=86400&token=${{ secrets.GH_STATS_TOKEN }}" \
-            -o assets/top-langs.svg
+          set -e
+          URL="https://github-readme-stats.vercel.app/api/top-langs/?username=Dumidu1212&layout=compact&theme=radical&hide_border=true&langs_count=10&cache_seconds=86400&token=${GH_STATS_TOKEN}"
+          for i in 1 2 3; do
+            echo "Attempt $i ..."
+            curl -I -sS "$URL" | sed -n '1p;/^x-ratelimit-/Ip'
+            code=0
+            curl -sSL "$URL" -o assets/top-langs.svg || code=$?
+            if [ $code -eq 0 ] && grep -q "<svg" assets/top-langs.svg; then
+              break
+            fi
+            sleep $((i*3))
+          done
+          test -s assets/top-langs.svg
 
       - name: Commit changes (only if changed)
         uses: stefanzweifel/git-auto-commit-action@v5
