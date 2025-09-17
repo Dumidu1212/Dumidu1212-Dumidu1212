@@ -35,6 +35,14 @@ I'm a final-year **Software Engineering undergraduate** with deep experience in 
 
 ---
 
+## 📈 GitHub Stats
+
+<p align="center">
+  <img src="./assets/top-langs.svg" alt="Top Langs" height="160" />
+</p>
+
+---
+
 ## 🤝 Let's Connect
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/dumidurajapaksha)
