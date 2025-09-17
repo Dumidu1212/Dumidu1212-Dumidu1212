@@ -37,10 +37,7 @@ I'm a final-year **Software Engineering undergraduate** with deep experience in 
 
 ## 📈 GitHub Stats
 
-<p align="center">
-  <img src="./assets/gh-stats.svg" alt="Dumindu's GitHub Stats" height="160" />
-  <img src="./assets/top-langs.svg" alt="Top Langs" height="160" />
-</p>
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=Dumidu1212&show_icons=true&theme=radical" alt="Dumindu's GitHub Stats" height="160" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dumidu1212&layout=compact&theme=radical" alt="Top Langs" height="160"/> </p>
 
 ---
 
