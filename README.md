@@ -39,6 +39,7 @@ I'm a final-year **Software Engineering undergraduate** with deep experience in 
 
 <p align="center">
   <img src="./assets/top-langs.svg" alt="Top Langs" height="160" />
+  <img src="./assets/gh-stats.svg" alt="GitHub Stats" height="160" />
 </p>
 
 ---
