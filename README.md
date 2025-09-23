@@ -8,7 +8,7 @@
 
 ## 🧠 About Me
 
-I'm a final-year **Software Engineering undergraduate** with deep experience in both **AI product development** and **real-world software systems**. My passion lies in building **agentic, modular, and scalable applications**  whether it's automating PDF comprehension with **Groq + Agno**, designing smart healthcare systems, or deploying microservice-based infrastructures.
+**Software Engineering** with deep experience in both **AI product development** and **real-world software systems**. My passion lies in building **agentic, modular, and scalable applications**  whether it's automating PDF comprehension with **Groq + Agno**, designing smart healthcare systems, or deploying microservice-based infrastructures.
 
 🌍 Based in **Sri Lanka**  
 💼 Currently building agentic AI tools using **Groq, Agno, OpenAI, pgvector**  
