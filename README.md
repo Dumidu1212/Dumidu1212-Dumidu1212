@@ -8,11 +8,13 @@
 
 ## 🧠 About Me
 
-**Software Engineer** with deep experience in both **AI product development** and **real-world software systems**. My passion lies in building **agentic, modular, and scalable applications**  whether it's automating PDF comprehension with **Groq + Agno**, designing smart healthcare systems, or deploying microservice-based infrastructures.
+I am a Software Engineer passionate about combining agentic AI architectures with system level engineering. My work spans from building self refining AI assistants using Groq + Agno to experimenting with operating system development in C and Assembly.
+
+I thrive in creating solutions that are both intelligent and efficient — whether it’s an AI powered PDF assistant, a multi language code analyzer, or a custom OS kernel project.
 
 🌍 Based in **Sri Lanka**  
-💼 Currently building agentic AI tools using **Groq, Agno, OpenAI, pgvector**  
-🛠️ Skilled in: `Python`, `JavaScript`, `Node.js`, `React`, `Java`, `MongoDB`, `PostgreSQL`, `Docker`, `OSGi`, `Flutter`, `Firebase`
+💼 Currently developing agentic AI tools and exploring Linux kernel & OS fundamentals  
+🛠️ Skilled in: `C`, `C++`, `Python`, `JavaScript`, `Node.js`, `React`, `Java`, `MongoDB`, `PostgreSQL`, `Docker`, `OSGi`, `Flutter`, `Firebase`
 
 ---
 
@@ -35,6 +37,7 @@
 
 
 ---
+
 
 ## 🤝 Let's Connect
 
