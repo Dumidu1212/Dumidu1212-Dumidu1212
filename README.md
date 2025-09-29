@@ -1,6 +1,6 @@
 # 👨‍💻 Dumidu Rajapaksha
 
-### AI-First Software Engineer | Agentic Architect | Open-Source Contributor
+### Software Engineering | Agentic AI | OS Development
 
 > Transforming ideas into intelligent, usable systems — from agentic AI assistants to full-stack engineering solutions.
 
